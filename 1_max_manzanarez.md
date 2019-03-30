@@ -68,6 +68,7 @@ Do the exercises below. *How to provided your answer is specificed in italics.* 
 
 
 ```
+A.
 $ cd ~/sio209
 $ mkdir test
 $ cd test
@@ -84,4 +85,49 @@ $ cd ..
 $ rm -r test
 $ history
 $ top
+
+B
+1. `cd` – Unix commands `man cd`, `help cd`, and `cd --help` will tell us what `cd` does, which is to change directories in different ways.
+2. `ls` – Googling "unix command ls" tells us how the `ls` command works to list directory contents.
+3. The commands `which mv` and `which cp` tell us that these commands are in `/bin` on our computer.
+4. Typing `Tab` in the middle of a command attemps to complete the command we are writing.
+5. Typing `Tab` in the middle of a file name or path attemps to complete the file name or path we are writing.
+
+C
+
+D
+$ head -n 5 FILE
+$ history | tail
+$ less FILE
+$ open FILE
+$ file FILE
+$ grep WORD FILE
+$ cut -d '    ' -f 3 FILE
+$ cat FILE | awk '{FS="\t"}; {print $3}' > NEWFILE
+$ cat FILE | perl -alne 'print $F[2]' > NEWFILE
+
+E
+$ cd /
+$ cd /Users/luke
+$ cd ../..
+$ cd ~
+$ A=5
+$ echo $A
+$ B='myfile.txt'
+$ echo $PATH
+$ echo $HOME
+$ for i in {1..10}; do echo $i; done
+
+F
+# myscript.sh
+mkdir tempdir
+cd tempdir
+echo "text here" > myfile
+cat myfile
+mv myfile myfile2
+for i in line1 line2 line3
+do
+    echo $i >> myfile2
+done
+cat myfile2
 ```
